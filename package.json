@@ -44,7 +44,7 @@
     "web3": "^1.6.1"
   },
   "scripts": {
-    "client": "craco  start",
+    "client": "NODE_OPTIONS=--openssl-legacy-provider craco  start",
     "server": "cd backend & npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "craco test",
